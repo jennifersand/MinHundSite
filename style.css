@@ -101,6 +101,12 @@ body{
 }
 
 
+@media only screen
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-devide-pixel-ratio : 3){ }
+
+
 @media (max-width: 768px)  {
   .hundben-hgr{
     display: none;
