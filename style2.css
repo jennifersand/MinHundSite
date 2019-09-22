@@ -1,0 +1,158 @@
+
+/* Antingen stylar man med element men vanligast är det att styla en klass */
+
+
+body{
+  background-color: #e6f2ff;
+}
+
+.Comic{
+  font-family: "Comic Sans MS";
+}
+
+.Rubrik h1{
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    padding-top: 10%
+}
+
+.hundben-hgr{
+  float:right;
+  padding-right: 100px;
+}
+
+.hundben-vnster{
+  float: left;
+  padding-left: 100px;
+}
+
+.insta img{
+  width: 20px;
+}
+.insta a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.insta{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: auto;
+}
+
+.gif{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+.masonry { /* Masonry container */
+    column-count: 5;
+    column-gap: 1em;
+
+}
+
+.item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
+}
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.item {
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+	-webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item img{max-width:100%;}
+
+.footer h1{
+      font-style: italic;
+      text-decoration: underline;
+      text-align: center;
+      font-size: 20px;
+      position: relative;
+      padding-top: 50px;
+      color: black
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+
+
+@media (max-width: 768px)  {
+  .hundben-hgr{
+    display: none;
+  }
+
+  .hundben-vnster{
+    display: none;
+  }
+
+}

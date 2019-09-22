@@ -1,0 +1,117 @@
+
+/* Antingen stylar man med element men vanligast är det att styla en klass */
+
+
+body{
+  background-color: #e6f2ff;
+}
+
+.slideshow-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.min-slideshow img{
+  padding-top: 10px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.Comic{
+  font-family: "Comic Sans MS";
+}
+
+.Rubrik{
+  background-color:  #cce6ff;
+  padding: 40px;
+}
+
+.Rubrik h1,h2{
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.hundben-hgr{
+  float:right;
+  padding-right: 100px;
+}
+
+.hundben-vnster{
+  float: left;
+  padding-left: 100px;
+}
+
+
+.Textruta{
+  background-image: linear-gradient(#99ccff,#b3b3ff);
+  width:400px;
+  padding: 20px;
+  margin:auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.Topplistan{
+  list-style-position: inside;
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.insta img{
+  width: 20px;
+}
+.insta a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.insta{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.gif{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.ssk {
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.ssk a {
+  color: black;
+}
+
+
+@media (max-width: 768px)  {
+  .hundben-hgr{
+    display: none;
+  }
+
+  .hundben-vnster{
+    display: none;
+  }
+
+  .slideshow-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
